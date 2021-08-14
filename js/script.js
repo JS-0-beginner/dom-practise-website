@@ -21,6 +21,7 @@ const cards = document.getElementsByClassName('card');
     }
 
 //Task(5)
+
 //Using - onclick="changeSubscribe()" in submit button 
 
     const footerBG = document.getElementById('footer');
@@ -30,7 +31,8 @@ const cards = document.getElementsByClassName('card');
      footerBG.style.backgroundColor='tomato';
  }
 
-//Task(7)
+//Task(6)
+
 const buttons = document.getElementsByClassName('buy-buttons');
      for(const button of buttons)
      {
@@ -47,23 +49,30 @@ const buttons = document.getElementsByClassName('buy-buttons');
         
      }
 
+//Task(7)
 
-/* document.getElementById('buy-buttons1').addEventListener('click',
+document.getElementById('email-word').addEventListener('keyup',
 
 function(event)
-     {
-         
-        
-        event.target.parentNode.removeChild(event.target);
-       
-        
-     }
-);
- */
+{
+    const submitButton = document.getElementById('submit-btn')
+
+    if(event.target.value == 'email')
+    {
+        submitButton.removeAttribute('disabled');
+    }
+    else
+    {
+        submitButton.setAttribute('disabled', true);
+    }
+}
+
+)
 
 //Task(8)
 
 ///////////////// watches \\\\\\\\\\\\\\\\\\\
+
 document.getElementById('watch-img').addEventListener('mouseenter',
 
 function()
@@ -125,7 +134,7 @@ function()
  
  function()
  {
-    footerBG.style.backgroundColor='#4682B4';
+    footer.style.backgroundColor='#4682B4';
  }
  
  );
