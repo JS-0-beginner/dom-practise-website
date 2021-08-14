@@ -21,7 +21,7 @@ const cards = document.getElementsByClassName('card');
     }
 
 //Task(5)
-//Using - Onclick
+//Using - onclick="changeSubscribe()" in submit button 
 
     const footerBG = document.getElementById('footer');
 
@@ -30,7 +30,96 @@ const cards = document.getElementsByClassName('card');
      footerBG.style.backgroundColor='tomato';
  }
 
- //Task(9)
+//Task(7)
+const buttons = document.getElementsByClassName('buy-buttons');
+     for(const button of buttons)
+     {
+         
+         button.addEventListener('click',
+            
+         function(event)
+         {
+        
+            event.target.parentNode.removeChild(event.target);
+         }
+         
+         );
+        
+     }
+
+
+/* document.getElementById('buy-buttons1').addEventListener('click',
+
+function(event)
+     {
+         
+        
+        event.target.parentNode.removeChild(event.target);
+       
+        
+     }
+);
+ */
+
+//Task(8)
+
+///////////////// watches \\\\\\\\\\\\\\\\\\\
+document.getElementById('watch-img').addEventListener('mouseenter',
+
+function()
+{
+    document.getElementById('watch-img').src='images/buy.jpg';
+}
+
+);
+document.getElementById('watch-img').addEventListener('mouseout',
+
+function()
+{
+    document.getElementById('watch-img').src='images/categories/watch.png';
+}
+
+);
+
+///////////////// shoes \\\\\\\\\\\\\\\\\\\
+document.getElementById('shoe-img').addEventListener('mouseenter',
+
+function()
+{
+    document.getElementById('shoe-img').src='images/buy.jpg';
+}
+
+);
+document.getElementById('shoe-img').addEventListener('mouseout',
+
+function()
+{
+    document.getElementById('shoe-img').src='images/categories/shoes.png';
+}
+
+);
+
+///////////////// bags \\\\\\\\\\\\\\\\\\\
+
+document.getElementById('bag-img').addEventListener('mouseenter',
+
+function()
+{
+    document.getElementById('bag-img').src='images/buy.jpg';
+}
+
+);
+document.getElementById('bag-img').addEventListener('mouseout',
+
+function()
+{
+    document.getElementById('bag-img').src='images/categories/bag.png';
+}
+
+);
+
+//Task(9)
+//Using addEventListener
 
  document.getElementById('footer').addEventListener('dblclick',
  
